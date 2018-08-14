@@ -21,13 +21,22 @@ button {
 
 #result1,
 #result2 {
-    font-family: 'Bungee Shade';
+    font-family: 'Faster One';
     font-size: 50px;
     text-align: center;
+    color: white;
+}
+
+#result2 {
+    font-size: 100px;
 }
 
 #main {
     margin: auto;
     width: 50%;
     margin-top: 75px;
+}
+
+body {
+    background-color: teal;
 }
