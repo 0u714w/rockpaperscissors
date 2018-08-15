@@ -1,5 +1,8 @@
 let option = ["Rock", "Paper", "Scissors"]
 
+p1Score = 1
+cScore = 1
+
 function rock() {
 
     let result = option[Math.floor((Math.random() * option.length))]
@@ -7,6 +10,8 @@ function rock() {
 
     if (result == option[1]) {
         document.getElementById("result2").innerHTML = ("You Lose!")
+        document.getElementById("scorediv2").innerHTML = (cScore++)
+
     }
 
     if (result == option[0]) {
@@ -14,6 +19,7 @@ function rock() {
     }
     if (result == option[2]) {
         document.getElementById("result2").innerHTML = ("You Win!")
+        document.getElementById("scorediv1").innerHTML = (p1Score++)
     }
 
     return result
@@ -30,6 +36,7 @@ function paper() {
 
     if (result == option[2]) {
         document.getElementById("result2").innerHTML = ("You Lose!")
+        document.getElementById("scorediv2").innerHTML = (cScore++)
     }
 
     if (result == option[1]) {
@@ -37,6 +44,7 @@ function paper() {
     }
     if (result == option[0]) {
         document.getElementById("result2").innerHTML = ("You Win!")
+        document.getElementById("scorediv1").innerHTML = (p1Score++)
     }
 
     return result
@@ -50,6 +58,7 @@ function scissors() {
 
     if (result == option[0]) {
         document.getElementById("result2").innerHTML = ("You Lose!")
+        document.getElementById("scorediv2").innerHTML = (cScore++)
     }
 
     if (result == option[2]) {
@@ -57,6 +66,7 @@ function scissors() {
     }
     if (result == option[1]) {
         document.getElementById("result2").innerHTML = ("You Win!")
+        document.getElementById("scorediv1").innerHTML = (p1Score++)
     }
     return result
 
